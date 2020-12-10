@@ -23,6 +23,19 @@
     }, 400);
 })();
 
+function mobileMenu() {
+    var x = document.getElementById("navbar");
+    if (x.className === "nav") {
+        x.className = "nav mobile";
+    } else {
+        x.className = "nav";
+    }
+}
+
+function linkClick() {
+    mobileMenu();
+}
+
 function sendMessage() {
     var something = "a5778984-e535-47af-b4e9-900abbf3052e";
 

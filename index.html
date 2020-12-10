@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CV - Bitca Ernest">
+    <meta name="keywords" content="Bitca Ernest Moldova UTM developer fullstack software">
+    <meta name="author" content="Ernest Bitca">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:wght@300&display=swap"
@@ -24,26 +27,27 @@
             <span class="loader"><span class="loader-inner"></span></span>
             <div class="loader-text">Ernest Bitca</div>
         </div>
-        
+
     </div>
 
     <div id="page-content">
 
         <header data-aos="fade-down" data-aos-delay="300">
-            <div id="navbar">
+            <div id="navbar" class="nav">
                 <a href="">Ernest Bîtca</a>
-                <a href="#about">
+                <a href="#about" onclick="linkClick()">
                     <i class="fa fa-user" aria-hidden="true"></i>
                     About
                 </a>
-                <a href="#resume">
+                <a href="#resume" onclick="linkClick()">
                     <i class="fa fa-briefcase" aria-hidden="true"></i>
                     Resume
                 </a>
-                <a href="#contacts">
+                <a href="#contacts" onclick="linkClick()">
                     <i class="fa fa-phone" aria-hidden="true"></i>
                     Contacts
                 </a>
+                <a class="hamburger-menu" onclick="mobileMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a>
             </div>
         </header>
 
@@ -491,7 +495,8 @@
                                 <div class="contacts-fields">
                                     <input id="contact-name" type="text" placeholder="Name" class="contacts-input" />
                                     <input id="contact-email" type="text" placeholder="Email" class="contacts-input" />
-                                    <textarea id="contact-message" class="contacts-input" placeholder="Message" rows="3"></textarea>
+                                    <textarea id="contact-message" class="contacts-input" placeholder="Message"
+                                        rows="3"></textarea>
                                     <div class="send-btn" onclick="sendMessage()">
                                         SEND
                                     </div>
@@ -500,7 +505,7 @@
                         </div>
                     </div>
                 </div>
-
+                <br />
             </section>
 
         </main>
