@@ -208,14 +208,26 @@ h1  {
 
 .loader {
     left: 209.5px;
-    top: 22px;
+    top: 12px;
     display: inline-block;
     width: 4px;
     height: 4px;
-    position: relative;
+    position: absolute;
     border: 1px solid white;
     background-color: white;
     animation: loader 2s infinite ease;
+    z-index: 2;
+}
+
+.hide-square {
+    left: 209.5px;
+    top: 10px;
+    display: inline-block;
+    width: 7px;
+    height: 9px;
+    position: absolute;
+    background-color: #333435;
+    z-index: 1;
 }
 
 @keyframes loader {
