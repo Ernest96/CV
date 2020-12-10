@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>CV - Bîtca Ernest</title>
+</head>
+
+<body>
+
+    <div id="loader-wrapper">
+        <div class="loader-content">
+            <span class="hide-square"></span>
+            <span class="loader"><span class="loader-inner"></span></span>
+            <div class="loader-text">Ernest Bitca</div>
+        </div>
+        
+    </div>
+
+    <div id="page-content">
+
+        <header data-aos="fade-down" data-aos-delay="300">
+            <div id="navbar">
+                <a href="">Ernest Bîtca</a>
+                <a href="#about">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    About
+                </a>
+                <a href="#resume">
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Resume
+                </a>
+                <a href="#contacts">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    Contacts
+                </a>
+            </div>
+        </header>
+
+        <main>
+
+            <section id="intro">
+                <div data-aos="zoom-in" data-aos-delay="300">
+                    <a class="nume" href="#despre">
+                        Ernest Bîtca
+                    </a>
+
+
+                    <div id="tiparire-job">
+                        >_ <span id="job-typeit"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <h1>About me</h1>
+
+                <div class="row">
+                    <div class="col-50 centered">
+                        <img data-aos="flip-left" class="imagine-profil" src="images/ernest.jpg" alt="eu" />
+                    </div>
+                    <div class="col-50">
+                        <div class="info-despre" data-aos="fade-left">
+                            <b>Nume Prenume: </b> Bîtca Ernest <br />
+                            <b>Vîrsta: </b> <span id="virsta"></span> <br />
+                            <b>Job: </b> Fullstack developer <br />
+                            <b>Languages: </b> Romanian, English, Russian<br />
+                            <b>Email: </b> bitca.ernest@gmail.com <br />
+                            <b>Origine: </b> Chișinău, Moldova <br />
+                            <a class="download-cv" href="resources/CV Bitca Ernest.pdf" download="CV-BitcaErnest.pdf">
+                                Descarcă CV
+                                <i class="fa fa-download" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up">
+
+                    <div class="row">
+                        <div class="col-100">
+                            <div class="text-despre">
+                                <p>
+                                    Sunt un tînăr profesionist IT din Republica Moldova
+                                    pasionat de dezvoltarea software și mai ales de
+                                    dezvoltarea aplicațiilor Web. Am cunoștințe și în alte domenii
+                                    precum dezvoltarea aplicațiilor mobile, baze de date, algoritmi,
+                                    șabloane de proiectare.
+                                    Pe lîngă aceasta sunt creatorul platformei
+                                    <a href="https://abcode.dev" target="_blank">ABCode</a> - prima platformă
+                                    de educație IT gratuită în Moldova.
+                                    În experiența mea profesională am avut ocazia să lucrez cu diverse
+                                    tehnologii precum:
+                                    <b>
+                                        .NET Core (MVC, API), SQL, SSRS, Entity Framework, NHibernate,
+                                        SignalR, Xamarin, Arduino, JQuery, JQGrid, Bootstrap.
+                                    </b>
+                                    Pentru lucrul în domeniu utilizez așa limbaje precum:
+                                    <b>
+                                        C#, C, JavaScript, SQL.
+                                    </b>
+                                    Pe lîngă limbaje de programare posed și experiență în scrierea unui "clean code"
+                                    aplicînd <b>SOLID, Design Patterns, Clean Architecture.</b>
+                                    Posed o gîndire algoritmică bine formată pe care o aplic în practică la elaborarea
+                                    unor rutine de prelucrare a seturilor mari de date.
+                                    Fiind lector asistent în cadrul Universității Tehnice din Moldova și mentor la
+                                    Tekwill
+                                    am
+                                    posibilitatea de
+                                    a împărtăși experiența și totodată să experimentez tehnologii noi.
+                                    Proiectele elaborate ca hobby le puteți găsi pe
+                                    <a href="https://github.com/Ernest96?tab=repositories" target="_blank">GitHub</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skills">
+
+                        <div class="row">
+                            <div class="col-50">
+                                <div class="skill">
+                                    <span class="skill-name">C#</span>
+                                    <span class="skill-percentage">90%</span>
+                                    <div class="progress-bar">
+                                        <div style="width: 90%;" class="progress" data-aos="zoom-in"
+                                            data-aos-offset="50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-50">
+                                <div class="skill">
+                                    <span class="skill-name">C</span>
+                                    <span class="skill-percentage">95%</span>
+                                    <div class="progress-bar">
+                                        <div style="width: 95%;" class="progress" data-aos="zoom-in"
+                                            data-aos-offset="50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-50">
+                                <div class="skill">
+                                    <span class="skill-name">SQL / Databases</span>
+                                    <span class="skill-percentage">85%</span>
+                                    <div class="progress-bar">
+                                        <div style="width: 85%;" class="progress" data-aos="zoom-in"
+                                            data-aos-offset="50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-50">
+                                <div class="skill">
+                                    <span class="skill-name">SSRS</span>
+                                    <span class="skill-percentage">80%</span>
+                                    <div class="progress-bar">
+                                        <div style="width: 80%;" class="progress" data-aos="zoom-in"
+                                            data-aos-offset="50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-50">
+                                <div class="skill">
+                                    <span class="skill-name">.NET Web API / MVC</span>
+                                    <span class="skill-percentage">90%</span>
+                                    <div class="progress-bar">
+                                        <div style="width: 80%;" class="progress" data-aos="zoom-in"
+                                            data-aos-offset="50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-50">
+                                <div class="skill">
+                                    <span class="skill-name">XAMARIN</span>
+                                    <span class="skill-percentage">55%</span>
+                                    <div class="progress-bar">
+                                        <div style="width: 55%;" class="progress" data-aos="zoom-in"
+                                            data-aos-offset="50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-50">
+                                <div class="skill">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">80%</span>
+                                    <div class="progress-bar">
+                                        <div style="width: 80%;" class="progress" data-aos="zoom-in"
+                                            data-aos-offset="50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-50">
+                                <div class="skill">
+                                    <span class="skill-name">HTML / CSS</span>
+                                    <span class="skill-percentage">90%</span>
+                                    <div class="progress-bar">
+                                        <div style="width: 90%;" class="progress" data-aos="zoom-in"
+                                            data-aos-offset="50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+            </section>
+
+            <section id="resume">
+                <h1>Resume</h1>
+                <h2>Experience</h2>
+
+                <div class="experience-row">
+                    <div class="experience-title" data-aos="fade-right">
+                        2020 Sep. - Present. <br /><br />
+                        UTM
+                    </div>
+                    <div class="experience-description" data-aos="fade-left">
+                        <h3>Lector asistent <i class="fa fa-briefcase" aria-hidden="true"></i></h3>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto alias nemo consectetur enim
+                        quae,
+                        quas voluptas exercitationem rem consequatur, illo vero corrupti incidunt sed vitae perferendis
+                        aspernatur sapiente consequuntur fugit!
+                    </div>
+                </div>
+
+                <div class="experience-row">
+                    <div class="experience-title" data-aos="fade-right">
+                        2020 Jul. - Present. <br /><br />
+                        Tekwill In Every School
+                    </div>
+                    <div class="experience-description" data-aos="fade-left">
+                        <h3>Mentor Teacher <i class="fa fa-briefcase" aria-hidden="true"></i></h3>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto alias nemo consectetur enim
+                        quae,
+                        quas voluptas exercitationem rem consequatur, illo vero corrupti incidunt sed vitae perferendis
+                        aspernatur sapiente consequuntur fugit!
+                    </div>
+                </div>
+
+                <div class="experience-row">
+                    <div class="experience-title" data-aos="fade-right">
+                        2019 Sep. - 2020 Jul. <br /><br />
+                        Amdaris
+                    </div>
+                    <div class="experience-description" data-aos="fade-left">
+                        <h3>Software Developer <i class="fa fa-briefcase" aria-hidden="true"></i></h3>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto alias nemo consectetur enim
+                        quae,
+                        quas voluptas exercitationem rem consequatur, illo vero corrupti incidunt sed vitae perferendis
+                        aspernatur sapiente consequuntur fugit!
+                    </div>
+                </div>
+
+                <div class="experience-row">
+                    <div class="experience-title" data-aos="fade-right">
+                        2017 May. - 2018 May. <br /><br />
+                        Mobiblocks
+                    </div>
+                    <div class="experience-description" data-aos="fade-left">
+                        <h3>Software Developer <i class="fa fa-briefcase" aria-hidden="true"></i></h3>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto alias nemo consectetur enim
+                        quae,
+                        quas voluptas exercitationem rem consequatur, illo vero corrupti incidunt sed vitae perferendis
+                        aspernatur sapiente consequuntur fugit!
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="studies">
+                <h2>Education</h2>
+
+                <div class="studies-row">
+                    <div class="studies-title" data-aos="fade-right">
+                        2019 Sep. - 2020 Dec. <br /><br />
+                        UTM
+                    </div>
+                    <div class="studies-description" data-aos="fade-left">
+                        <h3>IT Master Degree <i class="fa fa-graduation-cap" aria-hidden="true"></i></h3>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto alias nemo consectetur enim
+                        quae,
+                        quas voluptas exercitationem rem consequatur, illo vero corrupti incidunt sed vitae perferendis
+                        aspernatur sapiente consequuntur fugit!
+                    </div>
+                </div>
+
+                <div class="studies-row">
+                    <div class="studies-title" data-aos="fade-right">
+                        2015 Sep. - 2019 Jun. <br /><br />
+                        UTM
+                    </div>
+                    <div class="studies-description" data-aos="fade-left">
+                        <h3>IT Bachelor Degree <i class="fa fa-graduation-cap" aria-hidden="true"></i></h3>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto alias nemo consectetur enim
+                        quae,
+                        quas voluptas exercitationem rem consequatur, illo vero corrupti incidunt sed vitae perferendis
+                        aspernatur sapiente consequuntur fugit!
+                    </div>
+                </div>
+
+                <div class="studies-row">
+                    <div class="studies-title" data-aos="fade-right">
+                        2016 July. - 2017 May. <br /><br />
+                        Cursus 42
+                    </div>
+                    <div class="studies-description" data-aos="fade-left">
+                        <h3>Academy PLUS+ Project <i class="fa fa-graduation-cap" aria-hidden="true"></i></h3>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto alias nemo consectetur enim
+                        quae,
+                        quas voluptas exercitationem rem consequatur, illo vero corrupti incidunt sed vitae perferendis
+                        aspernatur sapiente consequuntur fugit!
+                    </div>
+                </div>
+
+                <div class="studies-row">
+                    <div class="studies-title" data-aos="fade-right">
+                        2003 Sep. - 2015 Jun. <br /><br />
+                        LT Stefan Cel Mare Chisinau
+                    </div>
+                    <div class="studies-description" data-aos="fade-left">
+                        <h3> Lyceum <i class="fa fa-graduation-cap" aria-hidden="true"></i></h3>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto alias nemo consectetur enim
+                        quae,
+                        quas voluptas exercitationem rem consequatur, illo vero corrupti incidunt sed vitae perferendis
+                        aspernatur sapiente consequuntur fugit!
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="volunteer">
+                <h2>Volunteering</h2>
+
+                <div class="volunteer-row">
+                    <div class="volunteer-title" data-aos="fade-right">
+                        2019 May. - Present. <br /><br />
+                        ABCode.dev
+                    </div>
+                    <div class="volunteer-description" data-aos="fade-left">
+                        <h3>Platform Creator <i class="fa fa-heart" aria-hidden="true"></i></h3>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto alias nemo consectetur enim
+                        quae,
+                        quas voluptas exercitationem rem consequatur, illo vero corrupti incidunt sed vitae perferendis
+                        aspernatur sapiente consequuntur fugit!
+                    </div>
+                </div>
+
+                <div class="volunteer-row">
+                    <div class="volunteer-title" data-aos="fade-right">
+                        2018 May. - Present. <br /><br />
+                        YouTube ABCode
+                    </div>
+                    <div class="volunteer-description" data-aos="fade-left">
+                        <h3>Tutorials Creator <i class="fa fa-heart" aria-hidden="true"></i></h3>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto alias nemo consectetur enim
+                        quae,
+                        quas voluptas exercitationem rem consequatur, illo vero corrupti incidunt sed vitae perferendis
+                        aspernatur sapiente consequuntur fugit!
+                    </div>
+                </div>
+
+                <div class="volunteer-row">
+                    <div class="volunteer-title" data-aos="fade-right">
+                        2018 Sep. - 2019 Jul. <br /><br />
+                        Coder Dojo
+                    </div>
+                    <div class="volunteer-description" data-aos="fade-left">
+                        <h3>Mentor <i class="fa fa-heart" aria-hidden="true"></i></h3>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto alias nemo consectetur enim
+                        quae,
+                        quas voluptas exercitationem rem consequatur, illo vero corrupti incidunt sed vitae perferendis
+                        aspernatur sapiente consequuntur fugit!
+                    </div>
+                </div>
+            </section>
+
+            <section id="achievments">
+                <h2>Achievments</h2>
+
+                <div class="achievment-row">
+                    <div class="achievment-title" data-aos="fade-right">
+                        2019 May. <br /><br />
+                        Burse de Merit
+                    </div>
+                    <div class="achievment-description" data-aos="fade-left">
+                        <h3>Best student from Moldova <i class="fa fa-trophy" aria-hidden="true"></i></h3>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto alias nemo consectetur enim
+                        quae,
+                        quas voluptas exercitationem rem consequatur, illo vero corrupti incidunt sed vitae perferendis
+                        aspernatur sapiente consequuntur fugit!
+                    </div>
+                </div>
+
+                <div class="achievment-row">
+                    <div class="achievment-title" data-aos="fade-right">
+                        2017 Jul. <br /><br />
+                        UTM
+                    </div>
+                    <div class="achievment-description" data-aos="fade-left">
+                        <h3>Best student from UTM (2nd grade) <i class="fa fa-trophy" aria-hidden="true"></i></h3>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto alias nemo consectetur enim
+                        quae,
+                        quas voluptas exercitationem rem consequatur, illo vero corrupti incidunt sed vitae perferendis
+                        aspernatur sapiente consequuntur fugit!
+                    </div>
+                </div>
+
+                <div class="achievment-row">
+                    <div class="achievment-title" data-aos="fade-right">
+                        2015 Apr. <br /><br />
+                        Cambridge English
+                    </div>
+                    <div class="achievment-description" data-aos="fade-left">
+                        <h3>Cambridge English Exam (B2) <i class="fa fa-trophy" aria-hidden="true"></i></h3>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto alias nemo consectetur enim
+                        quae,
+                        quas voluptas exercitationem rem consequatur, illo vero corrupti incidunt sed vitae perferendis
+                        aspernatur sapiente consequuntur fugit!
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section id="contacts">
+                <h1>Contact Me</h1>
+
+                <div class="contacts-form" data-aos="zoom-in-right">
+                    <div class="contacts-header">
+                        <div class="contacts-header-left">
+                            <div class="contacts-header-button close"></div>
+                            <div class="contacts-header-button maximize"></div>
+                            <div class="contacts-header-button minimize"></div>
+                        </div>
+                        <div class="contacts-header-right">
+                            <div class="contacts-header-ellipsis"></div>
+                            <div class="contacts-header-ellipsis"></div>
+                            <div class="contacts-header-ellipsis"></div>
+                        </div>
+                    </div>
+                    <div class="contacts-body">
+                        <div class="row">
+                            <div class="col-40">
+                                <div class="contacts-info">
+                                    <div class="title-contacts">
+                                        <div>Ernest</div>
+                                        <div>Bîtca</div>
+                                    </div>
+                                    <div class="email-contacts">
+                                        bitca.ernest@gmail.com
+                                    </div>
+                                </div>
+                                <div id="validation-message">
+                                </div>
+                            </div>
+                            <div class="col-60">
+                                <div id="contacts-loading">
+                                    <i class="fa fa-circle-o-notch fa-spin"></i>
+                                </div>
+                                <div class="contacts-fields">
+                                    <input id="contact-name" type="text" placeholder="Name" class="contacts-input" />
+                                    <input id="contact-email" type="text" placeholder="Email" class="contacts-input" />
+                                    <textarea id="contact-message" class="contacts-input" placeholder="Message" rows="3"></textarea>
+                                    <div class="send-btn" onclick="sendMessage()">
+                                        SEND
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <h3>Ernest Bîtca</h3>
+            <div class="footer-images">
+                <a href="https://www.linkedin.com/in/ernest-bitca-a3b5ab188/" target="_blank">
+                    <img src="images/linked.png" alt="Linkedin">
+                </a>
+                <a href="https://www.youtube.com/channel/UCajk1jidrqGwRacgq7rgi2Q" target="_blank">
+                    <img src="images/yt.png" alt="YouTube">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100004693086266" target="_blank">
+                    <img src="images/fb.png" alt="Facebook">
+                </a>
+            </div>
+
+        </footer>
+    </div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
