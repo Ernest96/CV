@@ -1,6 +1,6 @@
 (function () {
     setTimeout(function () {
-        document.getElementById('loader-wrapper').classList.add("fade-off");
+       // document.getElementById('loader-wrapper').classList.add("fade-off");
     
         new TypeIt("#job-typeit", {
             strings: "Software Developer",
