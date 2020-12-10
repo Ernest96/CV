@@ -20,7 +20,7 @@
             once: true
         });
 
-    }, 400);
+    }, 122300);
 })();
 
 function sendMessage() {
