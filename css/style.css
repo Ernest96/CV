@@ -537,12 +537,13 @@ h1  {
     }
 
     #intro {
-        background-position: 19%;
+        /* background-position: 19%; */
     }
 
-    .tech-img img {
-        max-height: 70px;
+    .info-despre {
+        padding: 4px 0px 2px 0px;
     }
+
 
     [class*="-row"] {
         display: block;
