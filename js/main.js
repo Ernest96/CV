@@ -25,16 +25,23 @@
 
 function sendMessage() {
     var something = "a5778984-e535-47af-b4e9-900abbf3052e";
-    var name = document.getElementById('contact-name').value;
-    var email = document.getElementById('contact-email').value;
-    var message = document.getElementById('contact-message').value;
 
-    document.getElementById('validation-message').innerHTML = "";
-    document.getElementById('validation-message').classList.remove("error")
+    var contactNameSelector = document.getElementById('contact-name');
+    var contactEmailSelector = document.getElementById('contact-email');
+    var contactMessageSelector = document.getElementById('contact-message');
+    var validationMessageSelector = document.getElementById('validation-message');
+    var contactsLoadingSelector = document.getElementById('contacts-loading');
+
+    var name = contactNameSelector.value;
+    var email = contactEmailSelector.value;
+    var message = contactMessageSelector.value;
+
+    validationMessageSelector.innerHTML = "";
+    validationMessageSelector.classList.remove("error")
 
 
     if (name.length && name.length && message.length) {
-        document.getElementById('contacts-loading').style.visibility = 'visible';
+        contactsLoadingSelector.style.visibility = 'visible';
         message = "From: " + name + " " + email + "<br />" + message; 
 
         Email.send({
@@ -45,16 +52,16 @@ function sendMessage() {
             Body : message
         }).then(function (response) {
             console.log(response);
-            document.getElementById('contacts-loading').style.visibility = 'hidden';
-            document.getElementById('validation-message').innerHTML = "Your message was sent :)";
+            contactsLoadingSelector.style.visibility = 'hidden';
+            validationMessageSelector.innerHTML = "Your message was sent :)";
+            contactNameSelector.value = "";
+            contactEmailSelector.value = "";
+            contactMessageSelector.value = "";
           }
         );
     }
     else {
-        document.getElementById('validation-message').classList.add("error");
-        document.getElementById('validation-message').innerHTML = "Please fill all the fields.";
+        validationMessageSelector.classList.add("error");
+        validationMessageSelector.innerHTML = "Please fill all the fields.";
     }
-
-
-    
 }
