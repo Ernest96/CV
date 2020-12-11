@@ -202,12 +202,20 @@ h1  {
     letter-spacing: 3px;
 }
 
+.loader-text div {
+    float:left;
+}
+
 .loader-content {
     position: relative;
 }
 
+.i-letter {
+    position: relative;
+}
+
 .loader {
-    left: 209.5px;
+    left: 3px;
     top: 10px;
     display: inline-block;
     width: 4px;
@@ -220,7 +228,7 @@ h1  {
 }
 
 .hide-square {
-    left: 209.5px;
+    left: 2.5px;
     top: 8px;
     display: inline-block;
     width: 7px;
@@ -229,6 +237,7 @@ h1  {
     background-color: #333435;
     z-index: 1;
 }
+
 
 @keyframes loader {
     0% { transform: rotate(0deg);}
