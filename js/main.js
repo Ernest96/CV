@@ -20,7 +20,7 @@
             once: true
         });
 
-    }, 400);
+    }, 500);
 })();
 
 function mobileMenu() {
@@ -37,7 +37,7 @@ function linkClick() {
 }
 
 function sendMessage() {
-    var something = "a5778984-e535-47af-b4e9-900abbf3052e";
+    var something = "2d2a2c91-3d09-402b-8308-041648c90070";
 
     var contactNameSelector = document.getElementById('contact-name');
     var contactEmailSelector = document.getElementById('contact-email');
@@ -53,27 +53,43 @@ function sendMessage() {
     validationMessageSelector.classList.remove("error")
 
     if (name.length && name.length && message.length) {
-        contactsLoadingSelector.style.visibility = 'visible';
-        message = "From: " + name + " " + email + "<br />" + message; 
-
-        Email.send({
-            SecureToken : something,
-            To : 'bitca.ernest@gmail.com',
-            From : "ernestdeveloper96@gmail.com",
-            Subject : "CV Site",
-            Body : message
-        }).then(function (response) {
-            console.log(response);
-            contactsLoadingSelector.style.visibility = 'hidden';
-            validationMessageSelector.innerHTML = "Your message was sent :)";
-            contactNameSelector.value = "";
-            contactEmailSelector.value = "";
-            contactMessageSelector.value = "";
-          }
-        );
+        if (validateEmail(email)) {
+            contactsLoadingSelector.style.visibility = 'visible';
+            message = "From: " + name + " " + email + "<br />" + message; 
+    
+            Email.send({
+                SecureToken : something,
+                To : 'bitca.ernest@gmail.com',
+                From : "ernestdeveloper96@gmail.com",
+                Subject : "CV Site",
+                Body : message
+            }).then(function (response) {
+                console.log(response);
+                contactsLoadingSelector.style.visibility = 'hidden';
+                validationMessageSelector.innerHTML = "Your message was sent :)";
+                contactNameSelector.value = "";
+                contactEmailSelector.value = "";
+                contactMessageSelector.value = "";
+              }
+            );
+        }
+        else {
+            contactsError("Email is not in a valid form.");
+        }
+        
     }
     else {
-        validationMessageSelector.classList.add("error");
-        validationMessageSelector.innerHTML = "Please fill all the fields.";
+        contactsError("Please fill all the fields.");
     }
+}
+
+function validateEmail(email) {
+    var re = /\S+@\S+\.\S+/;
+    return re.test(email);
+}
+
+function contactsError(errorMessage) {
+    var validationMessageSelector = document.getElementById('validation-message');
+    validationMessageSelector.classList.add("error");
+    validationMessageSelector.innerHTML = errorMessage;
 }
