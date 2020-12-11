@@ -215,8 +215,8 @@ h1  {
 }
 
 .loader {
-    left: 3px;
-    top: 10px;
+    left: 20%;
+    top: 18%;
     display: inline-block;
     width: 4px;
     height: 4px;
@@ -228,8 +228,8 @@ h1  {
 }
 
 .hide-square {
-    left: 2.5px;
-    top: 8px;
+    left: 13%;
+    top: 13%;
     display: inline-block;
     width: 9px;
     height: 11px;
