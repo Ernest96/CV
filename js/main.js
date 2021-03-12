@@ -37,7 +37,7 @@ function linkClick() {
 }
 
 function sendMessage() {
-    var something = "2d2a2c91-3d09-402b-8308-041648c90070";
+    var something = "4cd6c48c-aa60-45b5-a6e2-40fa7972f0d0";
 
     var contactNameSelector = document.getElementById('contact-name');
     var contactEmailSelector = document.getElementById('contact-email');
