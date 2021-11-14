@@ -20,7 +20,7 @@
             once: true
         });
 
-    }, 500);
+    }, 700);
 })();
 
 function mobileMenu() {
