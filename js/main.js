@@ -1,17 +1,17 @@
 (function () {
     setTimeout(function () {
         document.getElementById('loader-wrapper').classList.add("fade-off");
-    
+
         new TypeIt("#job-typeit", {
             strings: "Software Developer",
             startDelay: 750,
             speed: 80
         }).go();
-    
+
         let birthDate = new Date(1996, 8, 25);
         let today = new Date();
         let age = today.getFullYear() - birthDate.getFullYear();
-    
+
         document.getElementById('virsta').innerHTML = age;
         document.getElementById('page-content').style.display = 'block';
 
@@ -19,6 +19,8 @@
             duration: 500,
             once: true
         });
+
+        emailjs.init("user_HO6pThFEFKgSqVUZnMCCR");
 
     }, 700);
 })();
@@ -54,29 +56,31 @@ function sendMessage() {
 
     if (name.length && name.length && message.length) {
         if (validateEmail(email)) {
+
             contactsLoadingSelector.style.visibility = 'visible';
-            message = "From: " + name + " " + email + "<br />" + message; 
-    
-            Email.send({
-                SecureToken : something,
-                To : 'bitca.ernest@gmail.com',
-                From : "ernestdeveloper96@gmail.com",
-                Subject : "CV Site",
-                Body : message
-            }).then(function (response) {
-                console.log(response);
-                contactsLoadingSelector.style.visibility = 'hidden';
-                validationMessageSelector.innerHTML = "Your message was sent :)";
-                contactNameSelector.value = "";
-                contactEmailSelector.value = "";
-                contactMessageSelector.value = "";
-              }
-            );
+
+            let data = {
+                name,
+                email,
+                message
+            }
+
+            emailjs.send("service_x7yvt3f", "template_gabmljj", data)
+                .then(function (response) {
+                    console.log(response);
+                    contactsLoadingSelector.style.visibility = 'hidden';
+                    validationMessageSelector.innerHTML = "Your message was sent :)";
+                    contactNameSelector.value = "";
+                    contactEmailSelector.value = "";
+                    contactMessageSelector.value = "";
+                }, function (error) {
+                    alert("Error sending the message.");
+                    console.log(error);
+                })
         }
         else {
             contactsError("Email is not in a valid form.");
         }
-        
     }
     else {
         contactsError("Please fill all the fields.");
