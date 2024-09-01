@@ -344,12 +344,26 @@ h1  {
     line-height: 140%;
 }
 
+
+
 .experience-title {
     background: linear-gradient(360deg, rgba(27, 194, 27, 0.76), green);
 }
 
 .studies-title {
     background: linear-gradient(360deg, rgba(9, 142, 183, 0.76), rgb(2, 42, 94));
+}
+
+.project-logo {
+    margin-top: 20px;
+    max-height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-title {
+    background: linear-gradient(360deg, rgb(200, 200, 200,  76%), rgb(86, 86, 86));
 }
 
 .volunteer-title {
