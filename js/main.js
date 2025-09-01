@@ -8,9 +8,15 @@
             speed: 80
         }).go();
 
-        let birthDate = new Date(1996, 8, 25);
+        let birthDate = new Date(1996, 7, 25);
         let today = new Date();
+
+        let thisYearBirthday = new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate());
         let age = today.getFullYear() - birthDate.getFullYear();
+
+        if (today < thisYearBirthday) {
+            age--;
+        }
 
         document.getElementById('virsta').innerHTML = age;
         document.getElementById('page-content').style.display = 'block';
